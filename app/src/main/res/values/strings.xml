@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Final Task ITI</string>
+    <string name="ADD">ADD contact</string>
+    <string name="Show">show all</string>
+    <string name="name">name:</string>
+    <string name="phone">Phone Number:</string>
+    <string name="close">Back</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="EDIT">Edit Contact:</string>
+    <string name="appbar_title">Contacts</string>
+</resources>

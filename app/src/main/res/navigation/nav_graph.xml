@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.finaltaskiti.UI.views.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_addOrEditFragment"
+            app:destination="@id/addOrEditFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_showAllContactsFragment"
+            app:destination="@id/showAllContactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOrEditFragment"
+        android:name="com.example.finaltaskiti.UI.views.AddOrEditFragment"
+        android:label="AddOrEditFragment">
+        <argument
+            android:name="mode"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="number"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/showAllContactsFragment"
+        android:name="com.example.finaltaskiti.UI.views.ShowAllContactsFragment"
+        android:label="ShowAllContactsFragment" >
+        <action
+            android:id="@+id/action_showAllContactsFragment_to_addOrEditFragment"
+            app:destination="@id/addOrEditFragment" />
+    </fragment>
+</navigation>
